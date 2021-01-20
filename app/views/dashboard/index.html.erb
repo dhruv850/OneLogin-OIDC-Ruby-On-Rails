@@ -1,0 +1,9 @@
+<h1>Dashboard</h1>
+<p>
+  Authentication using OneLogin OIDC is Successful 🎉
+</p>
+<h2>Authenticated User</h2>
+<p>Id: <%= current_user.sub %></p>
+<p>Name: <%= current_user.given_name %> <%= current_user.family_name %></p>
+<p>Email: <%= current_user.email %></p>
+<p><a class="btn" href="/logout">Logout</a></p>
